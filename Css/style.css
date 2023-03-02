@@ -1,0 +1,240 @@
+ *{ 
+   margin: 1px;
+   padding: 0;
+   
+ }
+.main-div{
+   height: 100vh;
+    gap: 1px;
+    display:grid;
+    border:1px solid rgba(0, 0, 0, 0.8);
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+    text-align: center;
+    
+    
+ }
+ .sidebar{
+    border:1px solid rgba(0, 0, 0, 0.8);
+    grid-row: span 12;
+    grid-column:span 2;
+    overflow: scroll;
+    overflow-x: hidden;
+ }
+ 
+ .bar{
+   display: grid;
+     border:1px solid rgba(0, 0, 0, 0.8);
+     grid-template-columns: repeat(2,1fr);
+    grid-column:span 6 ;
+ }
+ .sub_bar{
+   border:1px solid rgba(0, 0, 0, 0.8);
+  grid-column:span 6 ;
+  display: flex;
+  justify-content: space-between;
+  
+ 
+}
+ .main{
+    grid-row: span 9;
+    grid-column: span 6;
+    border:1px solid rgba(0, 0, 0, 0.8);
+}
+
+.footer{
+      
+    border:1px solid rgba(0, 0, 0, 0.8);
+    grid-column: span 6;
+}
+.sidebar li {
+display: flex;
+gap: 10px;
+padding: 10px 10px 10px 0px;
+    
+}
+
+.bar  .search img  {
+   width: 30px;
+   height: 30px;
+
+}
+.bar .user img {
+   width: 35px;
+   height: 35px;
+   
+}
+.bar .search input[type=text]{
+   border: none;
+   background: #f1f1f1;
+   padding: 10px;
+   width: 40%;
+}
+.bar .search button{
+   width: 35px;
+   height: 35px;
+  
+}
+.bar .search{
+ display: flex;
+ align-items: center;
+}
+.bar .user {
+   padding-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+}
+ /* nav scroll bar */
+/* width */
+::-webkit-scrollbar {
+   width: 5px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey; 
+   border-radius: 10px;
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgb(219, 154, 79); 
+   border-radius: 10px;
+ }
+
+.sub_bar .title{
+    
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   
+
+}
+.sub_bar .date{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.tbl{
+   width: 100%;
+   border: 1px solid #ccc; 
+/* 
+   space boder in menu */
+   border-spacing:0 ;
+}
+/* decendent combinator  */
+.tbl thead tr th{
+   text-align: left;
+   background-color: rgb(12, 12, 71);
+   color: white;
+   padding: 6px 4px;
+   border-right: 1px solid #ccc;
+  
+}
+.tbl thead tr th:last-child{
+
+   /* because it double boder so need to disable one in last child  */
+   border-right: none;
+}
+.tbl tbody tr td{
+   font-size: 13px;
+   padding: 5px 4px;
+   /* som in body */
+   border-right: 1px solid #ccc;
+   border-bottom:1px solid #ccc;
+   
+}
+/* right on tbody */
+.tbl tbody tr td:last-child{
+border-right: none;
+
+}
+/* buttom on tbody */
+.tbl tbody tr:last-child td{
+   border-bottom: none;
+
+}
+/* color in every even t row */
+.tbl tbody tr:nth-child(even){
+   background: #dde;
+}
+
+.tbl  tbody tr:hover{
+   background: palegoldenrod;
+}
+/*  transition in tbody */
+.tbl tbody tr{
+   transition: all linear 0.4s;
+}
+.action a {
+   text-decoration: none;
+   margin-right: 10px;
+}
+.text-danger{
+   color: red;
+}
+.text-sucess{
+   color: green;
+}
+.btn{
+   text-decoration: none;
+   border: 1px solid green;
+   padding: 5px 9px ;
+   background: green;
+   color: white;
+   border-radius: 5px;
+}
+.pagination{
+   list-style: none;
+   padding: 0;
+   margin: 5px 0;
+}
+.pagination li{
+
+   display: inline-block;
+   margin-top: 125px;
+   float:right;
+  
+   
+}
+.pagination li a{
+   display: block;
+   padding: 4px 14px;
+   text-decoration: none;
+   border:1px solid #ddd;
+   border-radius: 4px;
+   transition: all linear     0.5s;
+}
+.pagination li a:hover{
+   background: pink;
+   counter-reset: #036;
+}
+.active{
+   background: #ddd;
+}
+.font{
+   font-family: 'Tilt Prism', cursive;
+   float: left;
+}
+.search-btn{
+  float:right;
+}
+.search-btn input[type=text]{
+   border: none;
+   background: #f1f1f1;
+   padding: 10px;
+   width: 50%;
+}
+.footer-title{
+   display: inline-block;
+   margin-top: 125px;
+   padding-left: 25px;
+   float:left;
+   font-size: medium;
+}
+.footer{
+ 
+   
+}
